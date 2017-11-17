@@ -12,24 +12,24 @@ public enum AlgoliaResponseError: Error {
 }
 
 public struct AlgoliaResponse<T: Decodable>: Decodable {
-    typealias HitType = T
-    let page: Int
-    let params: String
-    let processingTimeMS: Int
-    let query: String
-    let exhaustiveNbHits: Int
-    let nbPages: Int
-    let hits: [HitType]
-    let hitsPerPage: Int
-    let nbHits: Int
+    public typealias HitType = T
+    public let page: Int
+    public let params: String
+    public let processingTimeMS: Int
+    public let query: String
+    public let exhaustiveNbHits: Int
+    public let nbPages: Int
+    public let hits: [HitType]
+    public let hitsPerPage: Int
+    public let nbHits: Int
 }
 
 public struct FacetValuesResponse: Decodable {
-    struct Content: Decodable {
-        let value: String
-        let highlighted: String
-        let count: Int
+    public struct Content: Decodable {
+        public let value: String
+        public let highlighted: String
+        public let count: Int
     }
 
-    let facetHits: [Content]
+    public let facetHits: [Content]
 }
