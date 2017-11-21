@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Algent'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'Algent is a wrapper of Algolia search client for iOS.'
 
 # This description is used to generate tags and improve search results.
