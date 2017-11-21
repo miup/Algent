@@ -38,7 +38,6 @@ public class Algent {
             guard let json: [String: Any] = json else { return }
             do {
                 let data = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
-                print(String(data: data, encoding: .utf8)!)
                 let response = try JSONDecoder().decode(AlgoliaResponse<AlgoliaRequest.HitType>.self, from: data)
                 completion?(.success(response))
             } catch {
@@ -55,7 +54,6 @@ public class Algent {
                 guard let json: [String: Any] = json else { return }
                 do {
                     let data = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
-                    print(String(data: data, encoding: .utf8)!)
                     let response = try JSONDecoder().decode(FacetValuesResponse.self, from: data)
                     completion?(.success(response))
                 } catch {
@@ -68,7 +66,6 @@ public class Algent {
                 guard let json: [String: Any] = json else { return }
                 do {
                     let data = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
-                    print(String(data: data, encoding: .utf8)!)
                     let response = try JSONDecoder().decode(FacetValuesResponse.self, from: data)
                     completion?(.success(response))
                 } catch {
