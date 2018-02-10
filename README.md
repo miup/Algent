@@ -14,6 +14,67 @@ Open `AppDelegate.swift` and set your AlgoliaSearch AppID and APIKey.
 Algent.initialize(appID: "YOUR_APP_ID", apiKey: "YOUR_API_KEY")
 ```
 
+Add search result model with implementing decodable
+
+```Swift
+class Diary: Decodable {
+    let title: String
+    let text: String
+    // Algolia hash tag info
+    _tags: [String]
+}
+```
+
+Add search request class with implementing `AlgoliaRequestProtocol`
+
+```Swift
+struct SarchDiaryRequest: AlgoliaRequestProtocol {
+    // set search result type
+    typealias HitType = Diary
+
+    let page: Int
+    let per: Int
+    let text: String?
+    let hashtags: [String]?
+
+    var indexName: String {
+        return "diaries"
+    }
+
+    var query: AlgentQuery {
+        let query = AlgentQuery(query: text)
+        query.page = UInt(page)
+        query.hitsPerPage = UInt(per)
+        if let hashtags = hashtags {
+            query.tagFilters = hashtags
+        }
+        return query
+    }
+
+    init(page: Int, per: Int, text: String? = nil, hashtags: [String]? = nil) {
+        self.page = page
+        self.per = per
+        self.text = text
+        self.hashtags = hashtags
+    }
+}
+```
+
+Call Algent search method using your request.
+
+```Swift
+let request = SarchDiaryRequest(page: 0, per: 20, text: "hello world", hashtags: ["trip"])
+Algent.shared.search(request: request) { result in
+    switch result {
+    case .success(let response):
+        // response is AlgoliaResponse<Request.HitType>
+        print(response.hits) // see hit object
+    case .failure( let error):
+        print(error) // get error
+    }
+}
+```
+
 ## Requirements
 
 ## Installation
