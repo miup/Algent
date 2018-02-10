@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/Algent.svg?style=flat)](http://cocoapods.org/pods/Algent)
 [![Platform](https://img.shields.io/cocoapods/p/Algent.svg?style=flat)](http://cocoapods.org/pods/Algent)
 
+Algent is a type safe [algolia](https://algolia.com) wrapper library.
+
+You can use algolia with Swift decodable type as a search result.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -13,6 +17,8 @@ Open `AppDelegate.swift` and set your AlgoliaSearch AppID and APIKey.
 ```Swift
 Algent.initialize(appID: "YOUR_APP_ID", apiKey: "YOUR_API_KEY")
 ```
+
+## custom search
 
 Add search result model with implementing decodable
 
