@@ -1,4 +1,4 @@
-# Agent
+# Algent
 
 [![CI Status](http://img.shields.io/travis/miup/Algent.svg?style=flat)](https://travis-ci.org/miup/Algent)
 [![Version](https://img.shields.io/cocoapods/v/Algent.svg?style=flat)](http://cocoapods.org/pods/Algent)
