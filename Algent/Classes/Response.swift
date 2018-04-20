@@ -8,7 +8,7 @@
 import Foundation
 
 public enum AlgoliaResponseError: Error {
-    case cannnotDecodeResponse
+    case cannnotDecodeResponse(Error)
 }
 
 public struct AlgoliaResponse<T: Decodable>: Decodable {
@@ -17,7 +17,7 @@ public struct AlgoliaResponse<T: Decodable>: Decodable {
     public let params: String
     public let processingTimeMS: Int
     public let query: String
-    public let exhaustiveNbHits: Int
+    public let exhaustiveNbHits: Bool
     public let nbPages: Int
     public let hits: [HitType]
     public let hitsPerPage: Int

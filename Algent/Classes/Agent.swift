@@ -40,8 +40,8 @@ public class Algent {
                 let data = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
                 let response = try JSONDecoder().decode(AlgoliaResponse<AlgoliaRequest.HitType>.self, from: data)
                 completion?(.success(response))
-            } catch {
-                completion?(.failure(.cannnotDecodeResponse))
+            } catch (let error) {
+                completion?(.failure(.cannnotDecodeResponse(error)))
             }
         }
     }
@@ -56,8 +56,8 @@ public class Algent {
                     let data = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
                     let response = try JSONDecoder().decode(FacetValuesResponse.self, from: data)
                     completion?(.success(response))
-                } catch {
-                    completion?(.failure(.cannnotDecodeResponse))
+                } catch (let error) {
+                    completion?(.failure(.cannnotDecodeResponse(error)))
                 }
             }
         } else {
@@ -68,8 +68,8 @@ public class Algent {
                     let data = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
                     let response = try JSONDecoder().decode(FacetValuesResponse.self, from: data)
                     completion?(.success(response))
-                } catch {
-                    completion?(.failure(.cannnotDecodeResponse))
+                } catch (let error) {
+                    completion?(.failure(.cannnotDecodeResponse(error)))
                 }
             }
         }
