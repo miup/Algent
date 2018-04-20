@@ -7,17 +7,22 @@
 //
 
 import UIKit
+import Algent
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let request = SarchUserRequest(page: 0, per: 20, text: "", hashtags: [])
+        Algent.shared.search(request: request) { result in
+            switch result {
+            case .success(let response):
+                // response is AlgoliaResponse<Request.HitType>
+                print(response.hits) // see hit object
+            case .failure( let error):
+                print(error) // get error
+            }
+        }
     }
 
 }
