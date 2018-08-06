@@ -5,7 +5,7 @@
 //  Created by miup on 2017/10/12.
 //
 
-import AlgoliaSearch
+import InstantSearchClient
 import Result
 
 public typealias AlgentQuery = Query

@@ -5,7 +5,7 @@
 //  Created by miup on 2017/10/12.
 //
 
-import AlgoliaSearch
+import InstantSearchClient
 
 public protocol AlgoliaRequestProtocol {
     associatedtype HitType: Decodable

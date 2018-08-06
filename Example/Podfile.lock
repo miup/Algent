@@ -1,13 +1,13 @@
 PODS:
-  - Algent (0.1.0):
-    - AlgoliaSearch-Client-Swift (~> 5.0)
+  - Algent (0.2.2):
+    - InstantSearchClient (~> 5.0)
     - Result
-  - AlgoliaSearch-Client-Swift (5.1.0)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - InstantSearchClient (5.3.0)
   - Nimble (7.0.2)
   - Nimble-Snapshots (6.3.0):
     - Nimble-Snapshots/Core (= 6.3.0)
@@ -29,9 +29,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Algent: c2b404c9c272cf0679bfee529672f68889a8c1b2
-  AlgoliaSearch-Client-Swift: 9cd63f85d45c6e50f06c267439928c2211c1bfe4
+  Algent: 9bc462d8d3b51415736f3652daa59a8e8ddc9300
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  InstantSearchClient: 2b70bd14817d5c35cfb1e8b65b7801b3cbd2f537
   Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
