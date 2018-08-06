@@ -18,7 +18,7 @@ class ViewController: UIViewController {
             switch result {
             case .success(let response):
                 // response is AlgoliaResponse<Request.HitType>
-                print(response.hits) // see hit object
+                print(response) // see hit object
             case .failure( let error):
                 print(error) // get error
             }
@@ -26,4 +26,3 @@ class ViewController: UIViewController {
     }
 
 }
-

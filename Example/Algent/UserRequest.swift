@@ -19,7 +19,7 @@ struct SarchUserRequest: AlgoliaRequestProtocol {
     let hashtags: [String]?
 
     var indexName: String {
-        return "users"
+        return "user"
     }
 
     var query: AlgentQuery {
