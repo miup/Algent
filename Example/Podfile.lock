@@ -24,12 +24,21 @@ DEPENDENCIES:
   - Nimble-Snapshots (~> 6.3.0)
   - Quick (~> 1.2.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FBSnapshotTestCase
+    - InstantSearchClient
+    - Nimble
+    - Nimble-Snapshots
+    - Quick
+    - Result
+
 EXTERNAL SOURCES:
   Algent:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Algent: 9bc462d8d3b51415736f3652daa59a8e8ddc9300
+  Algent: 08e9f05093a3976408b316a002915f6d9996f8cc
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   InstantSearchClient: 2b70bd14817d5c35cfb1e8b65b7801b3cbd2f537
   Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
@@ -39,4 +48,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 46937b1aa3af174e44371e5600b52fcbd36d92af
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3
