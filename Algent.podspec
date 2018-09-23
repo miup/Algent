@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Algent'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'Algent is a wrapper of Algolia search client for iOS.'
 
 # This description is used to generate tags and improve search results.
@@ -39,6 +39,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'InstantSearchClient', '~> 5.0'
+  s.dependency 'InstantSearchClient', '~> 5.4'
   s.dependency 'Result'
 end

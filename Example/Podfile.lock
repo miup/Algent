@@ -1,14 +1,14 @@
 PODS:
-  - Algent (0.2.2):
-    - InstantSearchClient (~> 5.0)
+  - Algent (0.3.0):
+    - InstantSearchClient (~> 5.4)
     - Result
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - InstantSearchClient (5.3.0)
-  - Nimble (7.0.2)
+  - InstantSearchClient (5.4.0)
+  - Nimble (7.3.1)
   - Nimble-Snapshots (6.3.0):
     - Nimble-Snapshots/Core (= 6.3.0)
   - Nimble-Snapshots/Core (6.3.0):
@@ -19,10 +19,10 @@ PODS:
 
 DEPENDENCIES:
   - Algent (from `../`)
-  - FBSnapshotTestCase (~> 2.1.4)
-  - Nimble (~> 7.0.2)
-  - Nimble-Snapshots (~> 6.3.0)
-  - Quick (~> 1.2.0)
+  - FBSnapshotTestCase (~> 2.1)
+  - Nimble (~> 7.3)
+  - Nimble-Snapshots (~> 6.3)
+  - Quick (~> 1.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -38,14 +38,14 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Algent: 08e9f05093a3976408b316a002915f6d9996f8cc
+  Algent: 4fd1b86d222b43484b2436a9ff94c8d1b0a01e73
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  InstantSearchClient: 2b70bd14817d5c35cfb1e8b65b7801b3cbd2f537
-  Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
+  InstantSearchClient: 421df0b5c9a9f1c230ed0030120da447636a30d6
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
 
-PODFILE CHECKSUM: 46937b1aa3af174e44371e5600b52fcbd36d92af
+PODFILE CHECKSUM: c33b276f3094df12474108974a3c43b9205a37e3
 
 COCOAPODS: 1.5.3
