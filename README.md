@@ -34,7 +34,7 @@ class Diary: Decodable {
 Add search request class with implementing `AlgoliaRequestProtocol`
 
 ```Swift
-struct SarchDiaryRequest: AlgoliaRequestProtocol {
+struct SearchDiaryRequest: AlgoliaRequestProtocol {
     // set search result type
     typealias HitType = Diary
 
