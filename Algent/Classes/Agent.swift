@@ -6,7 +6,6 @@
 //
 
 import InstantSearchClient
-import Result
 
 public typealias AlgentQuery = Query
 
