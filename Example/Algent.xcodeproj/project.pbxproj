@@ -219,10 +219,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = P782ETKDNH;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = P782ETKDNH;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -506,6 +508,7 @@
 			baseConfigurationReference = 0EB186D7BC44F9A43D0D85CB /* Pods-Algent_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P782ETKDNH;
 				INFOPLIST_FILE = Algent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -522,6 +525,7 @@
 			baseConfigurationReference = EC83A7EBB2248E18D43237A6 /* Pods-Algent_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P782ETKDNH;
 				INFOPLIST_FILE = Algent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -537,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 45E35487B4BD2B2B6C7C0D5E /* Pods-Algent_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = P782ETKDNH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -558,6 +563,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D51F2468C7A52CC1678C21D0 /* Pods-Algent_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = P782ETKDNH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
