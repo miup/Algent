@@ -39,6 +39,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'InstantSearchClient', '~> 5.4'
-  s.dependency 'Result'
+  s.dependency 'InstantSearchClient', '~> 7.0'
 end

@@ -1,21 +1,24 @@
 PODS:
-  - Algent (0.3.0):
-    - InstantSearchClient (~> 5.4)
-    - Result
+  - Algent (0.4.0):
+    - InstantSearchClient (~> 7.0)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - InstantSearchClient (5.4.0)
-  - Nimble (7.3.1)
-  - Nimble-Snapshots (6.3.0):
-    - Nimble-Snapshots/Core (= 6.3.0)
-  - Nimble-Snapshots/Core (6.3.0):
-    - FBSnapshotTestCase (~> 2.0)
+  - InstantSearchClient (7.0.0)
+  - iOSSnapshotTestCase (5.0.2):
+    - iOSSnapshotTestCase/SwiftSupport (= 5.0.2)
+  - iOSSnapshotTestCase/Core (5.0.2)
+  - iOSSnapshotTestCase/SwiftSupport (5.0.2):
+    - iOSSnapshotTestCase/Core
+  - Nimble (7.3.4)
+  - Nimble-Snapshots (6.9.1):
+    - Nimble-Snapshots/Core (= 6.9.1)
+  - Nimble-Snapshots/Core (6.9.1):
+    - iOSSnapshotTestCase (~> 5.0)
     - Nimble (~> 7.0)
-  - Quick (1.2.0)
-  - Result (3.2.4)
+  - Quick (1.3.4)
 
 DEPENDENCIES:
   - Algent (from `../`)
@@ -28,24 +31,24 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FBSnapshotTestCase
     - InstantSearchClient
+    - iOSSnapshotTestCase
     - Nimble
     - Nimble-Snapshots
     - Quick
-    - Result
 
 EXTERNAL SOURCES:
   Algent:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Algent: 4fd1b86d222b43484b2436a9ff94c8d1b0a01e73
+  Algent: e61da7722e7e8a3d0929fcdb94e15b05ea22bf47
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  InstantSearchClient: 421df0b5c9a9f1c230ed0030120da447636a30d6
-  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
-  Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  InstantSearchClient: c9c1522c59f109514c6a37a7ec2a622e069ba56b
+  iOSSnapshotTestCase: 2d51aa06775e95cecb0a1fb9c5c159ccd1dd4596
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Nimble-Snapshots: bbd1ab264bacc24a9ce24a8363bc05aac783aeb0
+  Quick: f4f7f063c524394c73ed93ac70983c609805d481
 
 PODFILE CHECKSUM: c33b276f3094df12474108974a3c43b9205a37e3
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
