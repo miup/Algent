@@ -1,5 +1,5 @@
 PODS:
-  - Algent (0.4.0):
+  - Algent (0.6.0):
     - InstantSearchClient (~> 7.0)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
@@ -41,7 +41,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Algent: e61da7722e7e8a3d0929fcdb94e15b05ea22bf47
+  Algent: d7decbb8dfec3344b4adda285c6864f51657abcc
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   InstantSearchClient: c9c1522c59f109514c6a37a7ec2a622e069ba56b
   iOSSnapshotTestCase: 2d51aa06775e95cecb0a1fb9c5c159ccd1dd4596
